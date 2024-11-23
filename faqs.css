@@ -1,0 +1,482 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 20px;
+    color: #000;
+}
+
+.logo strong {
+    color: #1abc9c; /* Green shade for "CURE" */
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav ul li a:hover {
+    color: #1abc9c; /* Hover color */
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.phone {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-button {
+    padding: 8px 15px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.contact-button:hover {
+    background-color: #16a085; /* Slightly darker shade on hover */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer-section {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    color: #333;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .footer-brand,
+  .footer-contact,
+  .footer-socials {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-logo {
+    width: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-brand p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact h4,
+  .footer-socials h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .footer-contact ul,
+  .footer-socials ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-contact ul li,
+  .footer-socials ul li {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-contact ul li span,
+  .footer-socials ul li span {
+    font-size: 1.1rem;
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  .footer-socials ul li {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-brand, .footer-contact, .footer-socials {
+      margin-bottom: 20px;
+    }
+  
+    .footer-contact ul li,
+    .footer-socials ul li {
+      justify-content: center;
+    }
+  }
+
+  .icon {
+    margin-right: 8px;  /* Adjust this value for the desired space */
+    vertical-align: middle;  /* Aligns the icons vertically with the text */
+  }
+
+  /* General Section Styling */
+.health-benefits-section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    margin: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Left Side: Features */
+.features {
+    flex: 1 1 45%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+}
+
+/* Feature Card Design */
+.feature-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 48%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon-wrapper {
+    background: #f2f9ff;
+    border-radius: 50%;
+    padding: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper img {
+    width: 36px;
+    height: 36px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+/* Right Side: Text Content */
+.text-content {
+    flex: 1 1 45%;
+    padding: 1rem;
+}
+
+.text-content h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.text-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.text-content h3 {
+    font-size: 1.2rem;
+    color: #2a9d8f;
+    margin-bottom: 0.8rem;
+}
+
+.text-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.text-content ul li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.text-content ul li::before {
+    content: "●";
+    color: #2a9d8f;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    position: absolute;
+    left: -1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features,
+    .text-content {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .features {
+        justify-content: center;
+    }
+}
+
+
+/* General Section Styling */
+.about-faq-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section (Left Side) */
+.about-side {
+    flex: 1 1 40%; /* Takes 40% of the width */
+    padding-right: 2rem;
+}
+
+.about-side h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.about-side .highlight {
+    color: #00c573; /* Green highlight */
+}
+
+.about-side p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #00c573;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #009f5b;
+}
+
+/* FAQ Section (Right Side) */
+.faq-side {
+    flex: 1 1 55%; /* Takes 55% of the width */
+}
+
+.accordion {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #f3f3f3;
+}
+
+.accordion-content {
+    display: none;
+    padding: 1rem;
+    background-color: #fff;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.accordion-content ul {
+    padding-left: 1.5rem;
+}
+
+.accordion-content ul li {
+    list-style: disc;
+    margin-bottom: 0.5rem;
+}
+
+.faq-img{
+    width: 100%;
+}
+
+
+/* Newsletter Section Styles */
+.newsletter-section {
+    background-color: #f4f4f9; /* Light background color */
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .newsletter-section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .newsletter-section input[type="email"] {
+    padding: 10px 15px;
+    width: 70%;
+    max-width: 350px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .newsletter-section input[type="email"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .newsletter-section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  .newsletter-section button:focus {
+    outline: none;
+  }
+  
