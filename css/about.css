@@ -31,22 +31,93 @@ body {
     color: #1abc9c; /* Green shade for "CURE" */
 }
 
+/* Basic Styling */
 .nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav ul li {
-    margin: 0 15px;
+  margin: 0 15px;
+  position: relative; /* Important for positioning the dropdown */
 }
 
 .nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
 }
+
+/* Hover effect for the main links */
+.nav ul li a:hover {
+  color: #1abc9c; /* Hover color */
+}
+
+/* Basic Styling */
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  margin: 0 15px;
+  position: relative; /* Important for positioning the dropdown */
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Hover effect for the main links */
+.nav ul li a:hover {
+  color: #1abc9c; /* Hover color */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%; /* Position it below the parent item */
+  left: 0;
+  background-color: white; /* Background color of the dropdown */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border-radius: 5px;
+  padding: 10px 0;
+  min-width: 160px;
+  z-index: 100; /* Ensure it's on top */
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown-menu li a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  color: #1abc9c; /* Hover color for dropdown items */
+}
+
+/* Show the dropdown when hovering over the parent li */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hide the dropdown when not hovering over the parent li */
+.nav ul li:not(:hover) .dropdown-menu {
+  display: none;
+}
+
 
 .nav ul li a:hover {
     color: #1abc9c; /* Hover color */

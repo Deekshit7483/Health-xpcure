@@ -31,26 +31,93 @@ body {
     color: #1abc9c; /* Green shade for "CURE" */
 }
 
+/* Basic Styling */
 .nav ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.nav ul li {
+  }
+  
+  .nav ul li {
     margin: 0 15px;
-}
-
-.nav ul li a {
+    position: relative; /* Important for positioning the dropdown */
+  }
+  
+  .nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
-}
-
-.nav ul li a:hover {
+  }
+  
+  /* Hover effect for the main links */
+  .nav ul li a:hover {
     color: #1abc9c; /* Hover color */
-}
+  }
+  
+  /* Basic Styling */
+  .nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    margin: 0 15px;
+    position: relative; /* Important for positioning the dropdown */
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  /* Hover effect for the main links */
+  .nav ul li a:hover {
+    color: #1abc9c; /* Hover color */
+  }
+  
+  /* Dropdown Menu Styling */
+  .dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position it below the parent item */
+    left: 0;
+    background-color: white; /* Background color of the dropdown */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 5px;
+    padding: 10px 0;
+    min-width: 160px;
+    z-index: 100; /* Ensure it's on top */
+  }
+  
+  .dropdown-menu li {
+    padding: 10px 20px;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  .dropdown-menu li a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu li a:hover {
+    color: #1abc9c; /* Hover color for dropdown items */
+  }
+  
+  /* Show the dropdown when hovering over the parent li */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Hide the dropdown when not hovering over the parent li */
+  .nav ul li:not(:hover) .dropdown-menu {
+    display: none;
+  }
+  
 
 .contact {
     display: flex;
@@ -83,6 +150,105 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* General Section Styling */
+.contact-us-section {
+    background-color: #f8f8f8;
+    padding: 3rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.contact-container h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.contact-container h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.contact-container p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-row input,
+.form-row textarea {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2a9d8f;
+    box-shadow: 0 0 5px rgba(42, 157, 143, 0.3);
+}
+
+/* Submit Button Styling */
+.contact-form button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+.contact-form button:hover {
+    background-color: #2a9d8f;
+    transform: translateY(-2px);
+}
+
+.contact-form button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+
 
 .footer-section {
     background-color: #f8f8f8;
@@ -306,177 +472,3 @@ body {
         justify-content: center;
     }
 }
-
-
-/* General Section Styling */
-.about-faq-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* About Section (Left Side) */
-.about-side {
-    flex: 1 1 40%; /* Takes 40% of the width */
-    padding-right: 2rem;
-}
-
-.about-side h2 {
-    font-size: 2rem;
-    color: #000;
-    margin-bottom: 1rem;
-}
-
-.about-side .highlight {
-    color: #00c573; /* Green highlight */
-}
-
-.about-side p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-.explore-btn {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: #00c573;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.explore-btn:hover {
-    background-color: #009f5b;
-}
-
-/* FAQ Section (Right Side) */
-.faq-side {
-    flex: 1 1 55%; /* Takes 55% of the width */
-}
-
-.accordion {
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.accordion-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #f9f9f9;
-    color: #000;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    width: 100%;
-    text-align: left;
-    transition: background-color 0.3s ease;
-}
-
-.accordion-header:hover {
-    background-color: #f3f3f3;
-}
-
-.accordion-content {
-    display: none;
-    padding: 1rem;
-    background-color: #fff;
-    font-size: 0.9rem;
-    color: #666;
-    line-height: 1.5;
-}
-
-.accordion-content ul {
-    padding-left: 1.5rem;
-}
-
-.accordion-content ul li {
-    list-style: disc;
-    margin-bottom: 0.5rem;
-}
-
-.faq-img{
-    width: 100%;
-}
-
-
-/* Newsletter Section Styles */
-.newsletter-section {
-    background-color: #f4f4f9; /* Light background color */
-    padding: 30px;
-    max-width: 600px;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .newsletter-section h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .newsletter-section p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .newsletter-section form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .newsletter-section input[type="email"] {
-    padding: 10px 15px;
-    width: 70%;
-    max-width: 350px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-right: 10px;
-  }
-  
-  .newsletter-section input[type="email"]:focus {
-    outline: none;
-    border-color: #007bff;
-  }
-  
-  .newsletter-section button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .newsletter-section button:hover {
-    background-color: #0056b3;
-  }
-  
-  .newsletter-section button:focus {
-    outline: none;
-  }
-  
