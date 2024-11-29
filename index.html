@@ -6,26 +6,38 @@
     <title>Header Example</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/css/novabenefits.webflow.452093e41.css" rel="stylesheet" type="text/css"/>
 
 </head>
 <body>
   <header class="header">
+    <!-- Logo Section -->
     <div class="logo">
         <img src="images/Group 1000001503 1.png" alt="XP Cure Logo">
         <span>XP <strong>CURE</strong></span>
     </div>
+
+    <!-- Hamburger Menu for Mobile -->
+    <div class="hamburger" onclick="toggleNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Navigation Menu -->
     <nav class="nav">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li class="dropdown">
                 <a href="#">Services</a>
+                <!-- Dropdown Menu -->
                 <ul class="dropdown-menu">
-                  <li><a href="elderly.html">Elderly Care Service</a></li>
-                  <li><a href="pediatrics.html">Pediatrics</a></li>
-                  <li><a href="surgery.html">Post Surgery</a></li>
-              </ul>
-          </li>
+                    <li><a href="elderly.html">Elderly Care Service</a></li>
+                    <li><a href="pediatrics.html">Pediatrics</a></li>
+                    <li><a href="surgery.html">Post Surgery</a></li>
+                </ul>
+            </li>
             <li class="dropdown">
                 <a href="#">Our Policies</a>
                 <!-- Dropdown Menu -->
@@ -40,6 +52,8 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Contact Section -->
     <div class="contact">
         <span class="phone">📞 +91 78922 10068</span>
         <button class="contact-button">Get in touch</button>
@@ -69,69 +83,352 @@
         </div>
     </section>
 
-    <section class="health-benefits-section">
-        <div class="container">
-            <!-- Left Side: Features -->
-            <div class="features">
-                <div class="feature-card">
-                    <div class="icon-wrapper">
-                        <img src="icons/live-tracking.png" alt="Live Tracking">
-                    </div>
-                    <p>Live Tracking</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-wrapper">
-                        <img src="icons/mutual-respect.png" alt="Mutual Respect">
-                    </div>
-                    <p>Mutual Respect</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-wrapper">
-                        <img src="icons/elderly-care.png" alt="Elderly Care">
-                    </div>
-                    <p>Elderly Care</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-wrapper">
-                        <img src="icons/sos.png" alt="SOS Feature">
-                    </div>
-                    <p>SOS Feature</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-wrapper">
-                        <img src="icons/pediatrics.png" alt="Pediatrics">
-                    </div>
-                    <p>Pediatrics</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-wrapper">
-                        <img src="icons/post-surgery.png" alt="Post Surgery">
-                    </div>
-                    <p>Post Surgery</p>
-                </div>
-            </div>
-    
-            <!-- Right Side: Text Content -->
-            <div class="text-content">
-                <h2>Simplifying Health Benefits for All.</h2>
-                <p>
-                    We simplify health benefits by offering personalized solutions tailored to your needs. With clear cost insights 
-                    and seamless support, we help you make informed decisions and access the right care effortlessly. Take control of 
-                    your health with confidence and ease.
-                </p>
-                <h3>Core Offerings</h3>
-                <ul>
-                    <li>Clear and Easy Access</li>
-                    <li>Comprehensive Coverage</li>
-                    <li>Personalized Solutions</li>
-                    <li>Wellness and Preventive Care</li>
-                    <li>Cost Transparency</li>
-                    <li>Seamless Digital Experience</li>
-                    <li>Support for Critical Needs</li>
-                </ul>
-            </div>
-        </div>
-    </section>          
+    <section class="section home-2nd">
+      <div class="wide-container">
+          <div class="wide-card health-benefits-anim-card">
+              <div class="card-2c-grid">
+                  <div id="w-node-_65572594-4166-fd45-c42e-e16b62afacab-b65c71d8" class="hba-container mob-hide">
+                      <div id="w-node-_65572594-4166-fd45-c42e-e16b62afacac-b65c71d8" class="hba-gradient-bottom-right"></div>
+                      <div class="hba-gradient-top-left"></div>
+                      <div class="hba-grid">
+                          <div id="w-node-_65572594-4166-fd45-c42e-e16b62afacaf-b65c71d8" data-w-id="65572594-4166-fd45-c42e-e16b62afacaf" class="hba-row down-going">
+                              <div id="w-node-_3275acfb-9e5f-dfaa-8653-4336435da3b4-435da3b4" class="hba-row-symb">
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddc61e2ad49c27ae219_hba-dental-checkups.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Dental<br/>Checkups
+                                      </div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd96d60931d78d82db_hba-mental-wellness-consultations.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">Mental Wellness consultations</div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738dddbe4e69652ba6fa52_hba-tele-medecine-consultations.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">Tele-medicine consultations</div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738dddbe4e699fd2a6fa51_hba-social-fitness.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Social<br/>Fitness
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="w-node-_3275acfb-9e5f-dfaa-8653-4336435da3b4-435da3b4" class="hba-row-symb">
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddc61e2ad49c27ae219_hba-dental-checkups.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Dental<br/>Checkups
+                                      </div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd96d60931d78d82db_hba-mental-wellness-consultations.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">Mental Wellness consultations</div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738dddbe4e69652ba6fa52_hba-tele-medecine-consultations.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">Tele-medicine consultations</div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738dddbe4e699fd2a6fa51_hba-social-fitness.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Social<br/>Fitness
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div id="w-node-_65572594-4166-fd45-c42e-e16b62afacb2-b65c71d8" data-w-id="65572594-4166-fd45-c42e-e16b62afacb2" class="hba-row up-going">
+                              <div id="w-node-_8414237f-3afc-7b98-209b-520e9fc6689c-9fc6689c" class="hba-row-symb">
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddc91505e0f0d7045e5_hba-group-accident-cover.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Group Accident<br/>Cover
+                                      </div>
+                                  </div>
+                                  <div id="w-node-_8414237f-3afc-7b98-209b-520e9fc668a3-9fc6689c" class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddda4e2ea999d4b9dc2_hba-group-medical-cover.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Group Medical<br/>Cover
+                                      </div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddcb6db63e27afdb58a_hba-discounted-medicines.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Discounted<br/>Medicines
+                                      </div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd51c1e36b5c28a8c0_hba-full-body-health-checkups.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Full body<br/>health checkups
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="w-node-_8414237f-3afc-7b98-209b-520e9fc6689c-9fc6689c" class="hba-row-symb">
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddc91505e0f0d7045e5_hba-group-accident-cover.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Group Accident<br/>Cover
+                                      </div>
+                                  </div>
+                                  <div id="w-node-_8414237f-3afc-7b98-209b-520e9fc668a3-9fc6689c" class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddda4e2ea999d4b9dc2_hba-group-medical-cover.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Group Medical<br/>Cover
+                                      </div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddcb6db63e27afdb58a_hba-discounted-medicines.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Discounted<br/>Medicines
+                                      </div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd51c1e36b5c28a8c0_hba-full-body-health-checkups.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Full body<br/>health checkups
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div id="w-node-_65572594-4166-fd45-c42e-e16b62afacb5-b65c71d8" data-w-id="65572594-4166-fd45-c42e-e16b62afacb5" class="hba-row down-going">
+                              <div id="w-node-d415f5b3-f8b5-b173-f0e4-33a1a6ec7faf-a6ec7faf" class="hba-row-symb">
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd51c1e34fb328a8c1_hba-covid-19-coverage.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          COVID-19<br/>Coverage
+                                      </div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd5ca74545069439a6_hba-vision-checkups.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Vision<br/>Checkups
+                                      </div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddc51c1e3eb4328a8bf_hba-maternal-wellness.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Maternal<br/>Wellness
+                                      </div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd9f5270137ffbb8e7_hba-super-tops.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Super<br/>Tops
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="w-node-d415f5b3-f8b5-b173-f0e4-33a1a6ec7faf-a6ec7faf" class="hba-row-symb">
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd51c1e34fb328a8c1_hba-covid-19-coverage.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          COVID-19<br/>Coverage
+                                      </div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd5ca74545069439a6_hba-vision-checkups.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Vision<br/>Checkups
+                                      </div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddc51c1e3eb4328a8bf_hba-maternal-wellness.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Maternal<br/>Wellness
+                                      </div>
+                                  </div>
+                                  <div class="hba-item">
+                                      <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd9f5270137ffbb8e7_hba-super-tops.svg" loading="lazy" alt="" class="hba-icon"/>
+                                      <div class="text-b5 hba-text">
+                                          Super<br/>Tops
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="w-node-_65572594-4166-fd45-c42e-e16b62afacb8-b65c71d8" class="vertical-left-flex mob-centre-flex">
+                      <h2 class="h2 padding-bottom-16">Health Benefits simplified</h2>
+                      <p class="text-b4 heading-para health-benefits">
+                          Our healthcare services are three-fold. We ensure <strong>proactive, corrective</strong>
+                          , and <strong>reactive healthcare </strong>
+                          through insurance and wellness solutions
+                      </p>
+                      <div class="btn-container spacing-16">
+                          <a id="home-explore-insurance" href="/insurance-overview" class="button blue-btn w-button">Explore Insurance -&gt;</a>
+                          <a href="/wellness-overview" id="home-explore-wellness" class="button tiber-btn margin-right-0 w-button">Explore Wellness -&gt;</a>
+                      </div>
+                      <div class="hba-container mob-only">
+                          <div id="w-node-_65572594-4166-fd45-c42e-e16b62afacc9-b65c71d8" class="hba-gradient-bottom-right"></div>
+                          <div class="hba-gradient-top-left"></div>
+                          <div class="hba-grid">
+                              <div id="w-node-_65572594-4166-fd45-c42e-e16b62afaccc-b65c71d8" data-w-id="65572594-4166-fd45-c42e-e16b62afaccc" class="hba-row down-going">
+                                  <div id="w-node-_9ddb4d25-79c1-75dd-721c-c7b2b543b040-b543b040" class="hba-row-symb">
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddc61e2ad49c27ae219_hba-dental-checkups.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Dental<br/>Checkups
+                                          </div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd96d60931d78d82db_hba-mental-wellness-consultations.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">Mental Wellness consultations</div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738dddbe4e69652ba6fa52_hba-tele-medecine-consultations.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">Tele-medicine consultations</div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738dddbe4e699fd2a6fa51_hba-social-fitness.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Social<br/>Fitness
+                                          </div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd51c1e34fb328a8c1_hba-covid-19-coverage.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              COVID-19<br/>Coverage
+                                          </div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddc51c1e3eb4328a8bf_hba-maternal-wellness.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Maternal<br/>Wellness
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div id="w-node-_9ddb4d25-79c1-75dd-721c-c7b2b543b040-b543b040" class="hba-row-symb">
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddc61e2ad49c27ae219_hba-dental-checkups.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Dental<br/>Checkups
+                                          </div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd96d60931d78d82db_hba-mental-wellness-consultations.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">Mental Wellness consultations</div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738dddbe4e69652ba6fa52_hba-tele-medecine-consultations.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">Tele-medicine consultations</div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738dddbe4e699fd2a6fa51_hba-social-fitness.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Social<br/>Fitness
+                                          </div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd51c1e34fb328a8c1_hba-covid-19-coverage.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              COVID-19<br/>Coverage
+                                          </div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddc51c1e3eb4328a8bf_hba-maternal-wellness.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Maternal<br/>Wellness
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="w-node-_65572594-4166-fd45-c42e-e16b62afaccf-b65c71d8" data-w-id="65572594-4166-fd45-c42e-e16b62afaccf" class="hba-row up-going">
+                                  <div id="w-node-f3241f26-be30-0205-57b5-474cce12069e-ce12069e" class="hba-row-symb">
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddc91505e0f0d7045e5_hba-group-accident-cover.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Group Accident<br/>Cover
+                                          </div>
+                                      </div>
+                                      <div id="w-node-f3241f26-be30-0205-57b5-474cce1206a5-ce12069e" class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddda4e2ea999d4b9dc2_hba-group-medical-cover.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Group Medical<br/>Cover
+                                          </div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddcb6db63e27afdb58a_hba-discounted-medicines.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Discounted<br/>Medicines
+                                          </div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd51c1e36b5c28a8c0_hba-full-body-health-checkups.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Full body<br/>health checkups
+                                          </div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd5ca74545069439a6_hba-vision-checkups.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Vision<br/>Checkups
+                                          </div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd9f5270137ffbb8e7_hba-super-tops.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Super<br/>Tops
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div id="w-node-f3241f26-be30-0205-57b5-474cce12069e-ce12069e" class="hba-row-symb">
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddc91505e0f0d7045e5_hba-group-accident-cover.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Group Accident<br/>Cover
+                                          </div>
+                                      </div>
+                                      <div id="w-node-f3241f26-be30-0205-57b5-474cce1206a5-ce12069e" class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddda4e2ea999d4b9dc2_hba-group-medical-cover.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Group Medical<br/>Cover
+                                          </div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddcb6db63e27afdb58a_hba-discounted-medicines.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Discounted<br/>Medicines
+                                          </div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd51c1e36b5c28a8c0_hba-full-body-health-checkups.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Full body<br/>health checkups
+                                          </div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd5ca74545069439a6_hba-vision-checkups.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Vision<br/>Checkups
+                                          </div>
+                                      </div>
+                                      <div class="hba-item">
+                                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62738ddd9f5270137ffbb8e7_hba-super-tops.svg" loading="lazy" alt="" class="hba-icon"/>
+                                          <div class="text-b5 hba-text">
+                                              Super<br/>Tops
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="rating-testimonial-box home-health-benefits">
+                          <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/627252f442d0203cb991b787_review-five-stars.svg" loading="lazy" alt=""/>
+                          <div class="rating-testimonial-separator"></div>
+                          <p class="text-b5">“The Snapdeal team has had a great experience with Nova. We &#x27;ve been with them for 2 years consecutively! Apart from insurance, they helped us with vaccination and geriatric care for our employees’ parents”</p>
+                          <div class="rating-testimonial-profile">
+                              <img src="https://cdn.prod.website-files.com/626fcecbc824dd1c670451ba/62a9959189665b836818072a_image%2013.png" loading="lazy" width="33" height="33" alt="" class="rating-testimonial-profile-img"/>
+                              <div>
+                                  <div class="text-b5 t-semibold">Kunal Bahl</div>
+                                  <div class="text-b6 rating-testimonial-designation">Co-Founder and CEO, Snapdeal</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>         
 
       <div class="section">
         <h1>XP Cure</h1>
@@ -356,6 +653,6 @@
           </div>
         </div>
       </footer>
-
+      <script src="main.js"></script>
 </body>
 </html>

@@ -10,22 +10,33 @@
 </head>
 <body>
   <header class="header">
+    <!-- Logo Section -->
     <div class="logo">
         <img src="images/Group 1000001503 1.png" alt="XP Cure Logo">
         <span>XP <strong>CURE</strong></span>
     </div>
+
+    <!-- Hamburger Menu for Mobile -->
+    <div class="hamburger" onclick="toggleNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Navigation Menu -->
     <nav class="nav">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li class="dropdown">
                 <a href="#">Services</a>
+                <!-- Dropdown Menu -->
                 <ul class="dropdown-menu">
-                  <li><a href="elderly.html">Elderly Care Service</a></li>
-                  <li><a href="pediatrics.html">Pediatrics</a></li>
-                  <li><a href="surgery.html">Post Surgery</a></li>
-              </ul>
-          </li>
+                    <li><a href="elderly.html">Elderly Care Service</a></li>
+                    <li><a href="pediatrics.html">Pediatrics</a></li>
+                    <li><a href="surgery.html">Post Surgery</a></li>
+                </ul>
+            </li>
             <li class="dropdown">
                 <a href="#">Our Policies</a>
                 <!-- Dropdown Menu -->
@@ -40,6 +51,8 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Contact Section -->
     <div class="contact">
         <span class="phone">📞 +91 78922 10068</span>
         <button class="contact-button">Get in touch</button>
@@ -150,6 +163,6 @@ promoting a smooth and safe recovery.
     </div>
   </div>
 </footer>
-
+<script src="main.js"></script>
 </body>
 </html>

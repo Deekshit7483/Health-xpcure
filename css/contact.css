@@ -1,148 +1,195 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-    height: 40px;
-    margin-right: 10px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 .logo span {
-    font-size: 20px;
-    color: #000;
+  font-size: 20px;
+  color: #000;
 }
 
 .logo strong {
-    color: #1abc9c; /* Green shade for "CURE" */
+  color: #1abc9c; /* Green shade for "CURE" */
 }
 
 /* Basic Styling */
 .nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav ul li {
-    margin: 0 15px;
-    position: relative; /* Important for positioning the dropdown */
-  }
-  
-  .nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-  }
-  
-  /* Hover effect for the main links */
-  .nav ul li a:hover {
-    color: #1abc9c; /* Hover color */
-  }
-  
-  /* Basic Styling */
-  .nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav ul li {
-    margin: 0 15px;
-    position: relative; /* Important for positioning the dropdown */
-  }
-  
-  .nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-  }
-  
-  /* Hover effect for the main links */
-  .nav ul li a:hover {
-    color: #1abc9c; /* Hover color */
-  }
-  
-  /* Dropdown Menu Styling */
-  .dropdown-menu {
-    display: none; /* Hidden by default */
-    position: absolute;
-    top: 100%; /* Position it below the parent item */
-    left: 0;
-    background-color: white; /* Background color of the dropdown */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    border-radius: 5px;
-    padding: 10px 0;
-    min-width: 160px;
-    z-index: 100; /* Ensure it's on top */
-  }
-  
-  .dropdown-menu li {
-    padding: 10px 20px;
-    white-space: nowrap; /* Prevent text wrapping */
-  }
-  
-  .dropdown-menu li a {
-    color: #333;
-    font-size: 14px;
-    text-decoration: none;
-  }
-  
-  .dropdown-menu li a:hover {
-    color: #1abc9c; /* Hover color for dropdown items */
-  }
-  
-  /* Show the dropdown when hovering over the parent li */
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  /* Hide the dropdown when not hovering over the parent li */
-  .nav ul li:not(:hover) .dropdown-menu {
-    display: none;
-  }
-  
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.nav ul li {
+margin: 0 15px;
+position: relative; /* Important for positioning the dropdown */
+}
+
+.nav ul li a {
+text-decoration: none;
+color: #333;
+font-size: 16px;
+}
+
+/* Hover effect for the main links */
+.nav ul li a:hover {
+color: #1abc9c; /* Hover color */
+}
+
+/* Basic Styling */
+.nav ul {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.nav ul li {
+margin: 0 15px;
+position: relative; /* Important for positioning the dropdown */
+}
+
+.nav ul li a {
+text-decoration: none;
+color: #333;
+font-size: 16px;
+}
+
+/* Hover effect for the main links */
+.nav ul li a:hover {
+color: #1abc9c; /* Hover color */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+display: none; /* Hidden by default */
+position: absolute;
+top: 100%; /* Position it below the parent item */
+left: 0;
+background-color: white; /* Background color of the dropdown */
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+border-radius: 5px;
+padding: 10px 0;
+min-width: 160px;
+z-index: 100; /* Ensure it's on top */
+}
+
+.dropdown-menu li {
+padding: 10px 20px;
+white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown-menu li a {
+color: #333;
+font-size: 14px;
+text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+color: #1abc9c; /* Hover color for dropdown items */
+}
+
+/* Show the dropdown when hovering over the parent li */
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+/* Hide the dropdown when not hovering over the parent li */
+.nav ul li:not(:hover) .dropdown-menu {
+display: none;
+}
 
 .contact {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .phone {
-    margin-right: 15px;
-    font-size: 14px;
-    color: #555;
+  margin-right: 15px;
+  font-size: 14px;
+  color: #555;
 }
 
 .contact-button {
-    padding: 8px 15px;
-    background-color: #1abc9c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
+  padding: 8px 15px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .contact-button:hover {
-    background-color: #16a085; /* Slightly darker shade on hover */
+  background-color: #16a085; /* Slightly darker shade on hover */
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+.nav {
+    display: none; /* Hide the navigation by default on small screens */
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav.active {
+    display: flex; /* Show the navigation when active */
+}
+
+.nav ul {
+    flex-direction: column;
+}
+
+.nav ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+}
+
+.contact {
+    display: none; /* Hide the contact section in mobile view */
+}
+}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -471,4 +518,153 @@ textarea:focus {
     .features {
         justify-content: center;
     }
+}
+
+/* Header and Navigation */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .nav ul {
+    display: none; /* Initially hide the nav links */
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav ul li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav ul li a {
+    padding: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .nav.active ul {
+    display: flex; /* Show the menu when the parent has the 'active' class */
+    flex-direction: column;
+  }
+
+  /* Optionally, add a hamburger menu (requires JS for interaction) */
+  .nav .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+  }
+}
+
+/* Health Benefits Section */
+.health-benefits-section {
+  padding: 2rem;
+  flex-direction: column; /* Stack the content on mobile */
+}
+
+.features {
+  flex: 1 1 100%;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.feature-card {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.text-content {
+  padding: 1rem;
+}
+
+.text-content h2 {
+  font-size: 1.6rem;
+}
+
+.text-content h3 {
+  font-size: 1.4rem;
+}
+
+.text-content p,
+.text-content ul li {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .features,
+  .text-content {
+      flex: 1 1 100%;
+  }
+}
+
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Miscellaneous Mobile Tweaks */
+body {
+  font-size: 16px; /* Slightly reduce font size on mobile for better readability */
+}
+
+button {
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+}
+
+input,
+textarea {
+  font-size: 0.95rem;
+}
+
+/* Button and Input Adjustments for Mobile */
+.contact-form button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .container {
+      padding: 1rem;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-brand, .footer-contact, .footer-socials {
+      margin-bottom: 2rem;
+  }
+
+  .footer-contact ul li,
+  .footer-socials ul li {
+      font-size: 0.9rem;
+  }
+
+  .text-content h2 {
+      font-size: 1.8rem;
+  }
 }

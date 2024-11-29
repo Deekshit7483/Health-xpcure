@@ -118,7 +118,6 @@ body {
   display: none;
 }
 
-
 .contact {
     display: flex;
     align-items: center;
@@ -144,97 +143,191 @@ body {
     background-color: #16a085; /* Slightly darker shade on hover */
 }
 
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav {
+      display: none; /* Hide the navigation by default on small screens */
+      flex-direction: column;
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.active {
+      display: flex; /* Show the navigation when active */
+  }
+
+  .nav ul {
+      flex-direction: column;
+  }
+
+  .nav ul li {
+      margin: 10px 0;
+      text-align: center;
+  }
+
+  .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 25px;
+      height: 20px;
+      cursor: pointer;
+  }
+
+  .hamburger div {
+      width: 100%;
+      height: 3px;
+      background-color: #333;
+  }
+
+  .contact {
+      display: none; /* Hide the contact section in mobile view */
+  }
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 10%;
-    background-color: #fdfaf5; /* Soft beige background */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background-color: #fdfaf5; /* Soft beige background */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .hero-content {
-    max-width: 50%;
+  max-width: 50%;
 }
 
 .hero-content h4 {
-    color: #1abc9c; /* Green color for subtitle */
-    font-weight: 600;
-    margin-bottom: 10px;
-    font-size: 18px;
+  color: #1abc9c; /* Green color for subtitle */
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .hero-content h1 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-    line-height: 1.4;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 .hero-content p {
-    color: #555;
-    font-size: 16px;
-    margin-bottom: 20px;
-    line-height: 1.6;
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .hero-buttons {
-    gap: 15px;
-    margin-bottom: 20px;
-    height: 10px;
+  gap: 15px;
+  margin-bottom: 20px;
+  height: 10px;
 }
 
 .buton {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+  gap: 10px; /* Add spacing between buttons */
 }
 
 .primary-btn {
-    background-color: #1abc9c; /* Green button */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #1abc9c; /* Green button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .primary-btn:hover {
-    background-color: #16a085; /* Darker green on hover */
+  background-color: #16a085; /* Darker green on hover */
 }
 
 .secondary-btn {
-    background-color: #f1c40f; /* Yellow button */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #f1c40f; /* Yellow button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .secondary-btn:hover {
-    background-color: #f39c12; /* Darker yellow on hover */
+  background-color: #f39c12; /* Darker yellow on hover */
 }
 
 .trust-text {
-    color: #999;
-    font-size: 14px;
-    margin-top: 20px;
+  color: #999;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center; /* Center-align for better mobile readability */
 }
 
 .hero-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .hero {
+      flex-direction: column; /* Stack content vertically */
+      padding: 30px 5%; /* Adjust padding for smaller screens */
+      text-align: center; /* Center-align text for mobile */
+  }
+
+  .hero-content {
+      max-width: 100%; /* Allow full width for content */
+  }
+
+  .hero-content h1 {
+      font-size: 28px; /* Reduce font size for smaller screens */
+  }
+
+  .hero-content p {
+      font-size: 14px; /* Adjust text size */
+  }
+
+  .buton {
+      justify-content: center; /* Center buttons */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+      font-size: 24px; /* Further reduce font size */
+  }
+
+  .primary-btn,
+  .secondary-btn {
+      padding: 8px 16px; /* Adjust button padding */
+      font-size: 12px; /* Reduce button text size */
+  }
+
+  .trust-text {
+      font-size: 12px; /* Adjust font size for trust text */
+      margin-top: 50px;
+  }
+}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -403,11 +496,11 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-  }
+}
 
-  .healthcare-section {
+.healthcare-section {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
     align-items: center;
     justify-content: center;
     max-width: 1200px;
@@ -416,44 +509,44 @@ body {
     background-color: #1e5631;
     border-radius: 20px;
     color: white;
-  }
+}
 
-  .content {
+.content {
     flex: 1;
     max-width: 600px;
     padding: 20px;
-  }
+}
 
-  .content h1 {
+.content h1 {
     font-size: 28px;
     margin-bottom: 15px;
-  }
+}
 
-  .content p {
+.content p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
-  }
+}
 
-  .features {
+.features {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+}
 
-  .features li {
+.features li {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-  }
+}
 
-  .features li::before {
+.features li::before {
     content: "✔️";
     margin-right: 10px;
     color: #4caf50;
-  }
+}
 
-  .cta {
+.cta {
     margin-top: 20px;
     display: inline-block;
     padding: 10px 20px;
@@ -463,175 +556,301 @@ body {
     border-radius: 5px;
     font-size: 14px;
     transition: background-color 0.3s ease;
-  }
+}
 
-  .cta:hover {
+.cta:hover {
     background-color: #3a8d40;
-  }
+}
 
-  .image-container {
+.image-container {
     flex: 1;
     max-width: 400px;
     text-align: center;
     padding: 20px;
-  }
+}
 
-  .image-container img {
+.image-container img {
     max-width: 100%;
     border-radius: 10px;
-  }
+}
 
-  .contact {
+.contact {
     margin-top: 15px;
     font-size: 14px;
-  }
+}
 
-  .contact span {
+.contact span {
     display: block;
     margin-bottom: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .healthcare-section {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center-align content */
+        padding: 15px;
+    }
+
+    .content {
+        max-width: 100%; /* Use full width for content */
+        padding: 10px;
+    }
+
+    .content h1 {
+        font-size: 24px; /* Reduce font size */
+    }
+
+    .content p {
+        font-size: 14px; /* Reduce font size */
+        line-height: 1.5;
+    }
+
+    .features li {
+        font-size: 14px; /* Smaller font size for features */
+    }
+
+    .cta {
+        font-size: 12px; /* Adjust button font size */
+        padding: 8px 15px; /* Adjust button padding */
+    }
+
+    .image-container {
+        max-width: 100%; /* Image takes full width */
+        padding: 10px;
+    }
+
+    .image-container img {
+        max-width: 90%; /* Leave some margin around image */
+    }
+
+    .contact {
+        font-size: 12px; /* Reduce contact text size */
+    }
+
+    .contact span {
+        margin-bottom: 3px; /* Reduce spacing */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content h1 {
+        font-size: 20px; /* Further reduce font size for smaller screens */
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    .cta {
+        font-size: 10px;
+        padding: 6px 12px; /* Smaller padding for compact button */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Image adjusts to full width */
+    }
+}
+
+  
+/* General Reset */
+body, h2, ul, li, p, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.xp-cure-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.left-box, .right-box {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-box {
+  background-color: #e0f7ef; /* Light green */
+}
+
+.right-box {
+  background-color: #fff9e6; /* Light yellow */
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.explore-btn, .learn-more-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 55px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.explore-btn:hover, .learn-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.app-download {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.app-download span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.app-download p {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-align: center;
+  min-width: 120px;
+}
+
+.android-btn {
+  background-color: #333; /* Dark color for Android */
+}
+
+.ios-btn {
+  background-color: #333; /* Dark color for iOS */
+}
+
+.btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.app-download img {
+  max-width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .xp-cure-section {
+    flex-direction: column;
+    padding: 10px;
   }
 
-  .cta {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 5px 15px; /* Reduced padding for smaller size */
-    background-color: #4caf50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 12px; /* Smaller font size */
-    transition: background-color 0.3s ease;
-    height: 25px;
-    align-content: center;
-  }
-  
-  /* General Reset */
-body, h2, ul, li, p, a {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f8f8;
-    color: #333;
-  }
-  
-  .xp-cure-section {
-    max-width: 1200px;
-    margin: 40px auto;
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-  }
-  
   .content-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
   }
-  
+
   .left-box, .right-box {
-    flex: 1;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 15px;
   }
-  
-  .left-box {
-    background-color: #e0f7ef; /* Light green */
-  }
-  
-  .right-box {
-    background-color: #fff9e6; /* Light yellow */
-    margin-left: 50px;
-  }
-  
+
   h2 {
-    margin-bottom: 20px;
     font-size: 1.5rem;
+    margin-bottom: 15px;
   }
-  
+
   ul {
-    list-style: disc;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-left: 15px;
   }
-  
+
   li {
-    margin-bottom: 10px;
+    font-size: 0.95rem;
   }
-  
-  a {
-    text-decoration: none;
-  }
-  
+
   .explore-btn, .learn-more-btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 55px;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    width: 100%; /* Full width buttons */
     text-align: center;
-    font-size: 1rem;
   }
-  
-  .explore-btn:hover, .learn-more-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .app-download h3 {
-    margin-bottom: 10px;
+
+  .app-download span {
     font-size: 1.2rem;
   }
-  
+
   .app-download p {
-    font-style: italic;
-    margin-bottom: 20px;
+    font-size: 0.9rem;
   }
-  
+
   .buttons {
+    flex-direction: column; /* Stack buttons vertically */
     gap: 10px;
-    height: 50px;
-    margin-right: 100px;
   }
-  
+
   .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    min-width: 100%; /* Full width for better usability */
   }
-  
-  .android-btn {
-    background-color: black; /* Green for Android */
-    border-radius: 90px;
+
+  .app-download img {
+    margin: 10px auto;
+    max-width: 80%; /* Reduce image size on mobile */
   }
-  
-  .ios-btn {
-    background-color: black; /* Blue for iOS */
-    margin-top: 30px;
-    border-radius: 90px;
-  }
-  
-  .btn img {
-    width: 20px;
-    height: 20px;
-  }
-  
-  @media (max-width: 768px) {
-    .xp-cure-section {
-      flex-direction: column;
-    }
-  }
+}
 
   /* General Reset */
 body, h2, h3, p, form, input, button {

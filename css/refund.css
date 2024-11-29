@@ -1,237 +1,302 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-    height: 40px;
-    margin-right: 10px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 .logo span {
-    font-size: 20px;
-    color: #000;
+  font-size: 20px;
+  color: #000;
 }
 
 .logo strong {
-    color: #1abc9c; /* Green shade for "CURE" */
+  color: #1abc9c; /* Green shade for "CURE" */
 }
 
 /* Basic Styling */
 .nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
 }
 
 .nav ul li {
-  margin: 0 15px;
-  position: relative; /* Important for positioning the dropdown */
+margin: 0 15px;
+position: relative; /* Important for positioning the dropdown */
 }
 
 .nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
+text-decoration: none;
+color: #333;
+font-size: 16px;
 }
 
 /* Hover effect for the main links */
 .nav ul li a:hover {
-  color: #1abc9c; /* Hover color */
+color: #1abc9c; /* Hover color */
 }
 
 /* Basic Styling */
 .nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
 }
 
 .nav ul li {
-  margin: 0 15px;
-  position: relative; /* Important for positioning the dropdown */
+margin: 0 15px;
+position: relative; /* Important for positioning the dropdown */
 }
 
 .nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
+text-decoration: none;
+color: #333;
+font-size: 16px;
 }
 
 /* Hover effect for the main links */
 .nav ul li a:hover {
-  color: #1abc9c; /* Hover color */
+color: #1abc9c; /* Hover color */
 }
 
 /* Dropdown Menu Styling */
 .dropdown-menu {
-  display: none; /* Hidden by default */
-  position: absolute;
-  top: 100%; /* Position it below the parent item */
-  left: 0;
-  background-color: white; /* Background color of the dropdown */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  border-radius: 5px;
-  padding: 10px 0;
-  min-width: 160px;
-  z-index: 100; /* Ensure it's on top */
+display: none; /* Hidden by default */
+position: absolute;
+top: 100%; /* Position it below the parent item */
+left: 0;
+background-color: white; /* Background color of the dropdown */
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+border-radius: 5px;
+padding: 10px 0;
+min-width: 160px;
+z-index: 100; /* Ensure it's on top */
 }
 
 .dropdown-menu li {
-  padding: 10px 20px;
-  white-space: nowrap; /* Prevent text wrapping */
+padding: 10px 20px;
+white-space: nowrap; /* Prevent text wrapping */
 }
 
 .dropdown-menu li a {
-  color: #333;
-  font-size: 14px;
-  text-decoration: none;
+color: #333;
+font-size: 14px;
+text-decoration: none;
 }
 
 .dropdown-menu li a:hover {
-  color: #1abc9c; /* Hover color for dropdown items */
+color: #1abc9c; /* Hover color for dropdown items */
 }
 
 /* Show the dropdown when hovering over the parent li */
 .dropdown:hover .dropdown-menu {
-  display: block;
+display: block;
 }
 
 /* Hide the dropdown when not hovering over the parent li */
 .nav ul li:not(:hover) .dropdown-menu {
-  display: none;
+display: none;
 }
 
-
 .contact {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .phone {
-    margin-right: 15px;
-    font-size: 14px;
-    color: #555;
+  margin-right: 15px;
+  font-size: 14px;
+  color: #555;
 }
 
 .contact-button {
-    padding: 8px 15px;
-    background-color: #1abc9c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
+  padding: 8px 15px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .contact-button:hover {
-    background-color: #16a085; /* Slightly darker shade on hover */
+  background-color: #16a085; /* Slightly darker shade on hover */
 }
 
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+.nav {
+    display: none; /* Hide the navigation by default on small screens */
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav.active {
+    display: flex; /* Show the navigation when active */
+}
+
+.nav ul {
+    flex-direction: column;
+}
+
+.nav ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+}
+
+.contact {
+    display: none; /* Hide the contact section in mobile view */
+}
+}
+
+/* Footer Styling */
 .footer-section {
-    background-color: #f8f8f8;
-    padding: 40px 20px;
-    color: #333;
-  }
-  
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  color: #333;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+}
+
+.footer-brand,
+.footer-contact,
+.footer-socials {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.footer-contact h4,
+.footer-socials h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-contact ul,
+.footer-socials ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact ul li,
+.footer-socials ul li {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.footer-contact ul li img,
+.footer-socials ul li img {
+  margin-right: 8px; /* Space between icon and text */
+  vertical-align: middle; /* Align icons with text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  
-  .footer-brand,
-  .footer-contact,
-  .footer-socials {
-    flex: 1;
-    min-width: 250px;
-  }
-  
-  .footer-logo {
-    width: 60px;
-    margin-bottom: 15px;
-  }
-  
-  .footer-brand p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
-  
-  .footer-contact h4,
-  .footer-socials h4 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    font-weight: bold;
-  }
-  
-  .footer-contact ul,
-  .footer-socials ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-contact ul li,
-  .footer-socials ul li {
-    font-size: 0.95rem;
-    line-height: 1.8;
-    display: flex;
-    align-items: center;
-  }
-  
-  .footer-contact ul li span,
-  .footer-socials ul li span {
-    font-size: 1.1rem;
-    margin-right: 10px;
-    color: #007bff;
-  }
-  
-  .footer-socials ul li {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .footer-container {
       flex-direction: column;
       align-items: center;
       text-align: center;
-    }
-  
-    .footer-brand, .footer-contact, .footer-socials {
-      margin-bottom: 20px;
-    }
-  
-    .footer-contact ul li,
-    .footer-socials ul li {
-      justify-content: center;
-    }
   }
 
-  .icon {
-    margin-right: 8px;  /* Adjust this value for the desired space */
-    vertical-align: middle;  /* Aligns the icons vertically with the text */
+  .footer-brand,
+  .footer-contact,
+  .footer-socials {
+      margin-bottom: 20px;
   }
+
+  .footer-contact ul li,
+  .footer-socials ul li {
+      justify-content: center; /* Center-align text with icons */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+      width: 50px; /* Scale logo down further */
+  }
+
+  .footer-brand p {
+      font-size: 0.8rem; /* Reduce paragraph font size */
+  }
+
+  .footer-contact h4,
+  .footer-socials h4 {
+      font-size: 1rem; /* Adjust heading font size */
+  }
+
+  .footer-contact ul li,
+  .footer-socials ul li {
+      font-size: 0.85rem; /* Adjust list item font size */
+  }
+
+  .footer-contact ul li img,
+  .footer-socials ul li img {
+      margin-right: 5px; /* Reduce space between icon and text */
+  }
+}
 
 /*end of header and footer */
 
