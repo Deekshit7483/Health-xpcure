@@ -352,9 +352,22 @@ display: none;
     margin-right: auto;
     width: 50%;
   }
-  .heading{
+
+  .heading {
+    align-items: center;
     text-align: center;
-  }
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black; /* Text color */
+    padding: 0.5rem 1rem;
+    background-image: url('https://img.freepik.com/free-vector/decorative-soft-green-watercolor-brush-stroke-design-background_1055-20735.jpg?t=st=1733062247~exp=1733065847~hmac=b7fd739cbc5eaba13f6656c3b283ff524924164a245ac87fd54f0235970662c7&w=1060'); /* Replace with your image URL */
+    background-size: 200px; /* Adjust size to fit */
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px; /* Optional: round the corners */
+}
 
   /* General Reset */
 * {
@@ -415,13 +428,13 @@ body {
 
 /* Highlighted Box Styling */
 .highlight-box {
-  flex: 1;
   background-color: #eef8f4;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
-  min-width: 300px; /* Maintain minimum width for small screens */
+  height: 350px;
+  width: 320px;
 }
 
 .highlight-box h3 {

@@ -804,13 +804,14 @@ body {
 .cta-button {
   display: inline-block;
   background-color: #ffa500;
-  color: #ffffff; /* Button text is now white */
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
   transition: background-color 0.3s;
+  background-color: #ff8500; /* Slightly darker on hover */
+  color: #f8f3f3; /* Ensure text remains white on hover */
 }
 
 .cta-button:hover {
