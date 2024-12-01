@@ -1369,30 +1369,6 @@ body {
   }
 }
 
-@keyframes moveUp {
-  0% {
-      transform: translateY(0);
-  }
-  50% {
-      transform: translateY(-20px); /* Move up */
-  }
-  100% {
-      transform: translateY(0); /* Return to original position */
-  }
-}
-
-@keyframes moveDown {
-  0% {
-      transform: translateY(0);
-  }
-  50% {
-      transform: translateY(20px); /* Move down */
-  }
-  100% {
-      transform: translateY(0); /* Return to original position */
-  }
-}
-
 .hba-row.up-going {
   animation: moveUp 2s infinite ease-in-out; /* Continuous upward movement */
 }
@@ -1409,4 +1385,414 @@ body {
 
 .hba-item img {
   max-width: 100%; /* Ensure images are responsive */
+}
+
+
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.explore-section, .book-section {
+  width: 45%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.explore-section {
+  background-color: #1CA079;
+  color: white;
+  text-align: left;
+}
+
+.book-section {
+  background-color: white;
+  color: black;
+  text-align: left;
+}
+
+.explore-section h2 {
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+
+.download-button {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.download-button img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.phone-image img {
+  width: 100px;
+  margin-top: 20px;
+}
+
+
+
+
+.explore-container {
+    background-color: #1CA079;
+    color: white;
+    padding-top: 10px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.explore-text {
+  font-size: 27px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.explore-button {
+    display: block;
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-left: 40px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    width: 150px;
+}
+
+.explore-button:hover {
+    background-color: #333;
+}
+
+
+.book-app-container {
+  background-color: #ffffff;
+  color: black;
+  padding: 20px;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 30px;
+}
+
+.book-app-container h2 {
+  font-size: 27px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.learn-more-button {
+  background-color: #0B3948;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.learn-more-button:hover {
+  background-color: #0056b3;
+}
+
+.app-section {
+  margin-top: 20px;
+}
+
+.app-section h3 {
+  font-size: 18px;
+  color: #33A04C;
+  margin-bottom: 5px;
+}
+
+.app-section p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+
+.download-button {
+  background-color: #0B3948;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.download-button img {
+  width: 20px;
+  margin-left: 5px;
+}
+
+.phone-image {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.phone-image img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.tran-logo{
+  width: 110px;
+  height: 110px;
+  translate: 390px 50px;
+}
+
+
+/* Style for the company name */
+.company-name {
+  background-color: white;
+  width: 110px;
+  border-radius: 20px;
+  padding: 10px; /* Add some padding so the text doesn't touch the edges */
+  font-size: 24px; /* Adjust the font size for the company name */
+}
+
+/* Style for the strong tag inside the company name */
+.company-name strong {
+  color: #1CA079; /* Apply the color to the strong element */
+}
+
+/* Optional: Style for <strong> inside a <h1> in a .section */
+.section h1 strong {
+  color: #1CA079; /* Change color if used within a h1 */
+}
+
+.design{
+  height: 150px;
+}
+
+
+
+
+
+/* Base styles for the body */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Healthcare section */
+.healthcare-section {
+  background-color: #066348; /* Green background */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Remove fixed width */
+  max-width: 1200px; /* Optional: Max width for large screens */
+  margin: 0 auto; /* Center the content */
+}
+
+/* Content container for text and image */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Text content */
+.text-content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.text-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.text-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.text-content ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.list-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Button styling */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #1CA079;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Image content */
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .text-content h2 {
+    font-size: 24px; /* Adjusting title size for smaller screens */
+  }
+
+  .text-content p {
+    font-size: 14px; /* Smaller font size for paragraphs */
+  }
+
+  .text-content ul li {
+    font-size: 14px; /* Smaller list items */
+  }
+
+  /* Adjust the layout on small screens */
+  .content-container {
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center the items */
+    gap: 15px;
+  }
+
+  .button {
+    padding: 12px 25px; /* Larger button padding */
+    font-size: 16px; /* Larger text for button */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Even smaller devices like phones in portrait mode */
+  .text-content h2 {
+    font-size: 20px; /* Smaller font for very small screens */
+  }
+
+  .text-content p {
+    font-size: 12px; /* Further reduce paragraph font size */
+  }
+
+  .text-content ul li {
+    font-size: 12px; /* Even smaller font size for list items */
+  }
+
+  .list-icon {
+    width: 15px; /* Reduce the icon size on small screens */
+    height: 15px;
+  }
+
+  .button {
+    font-size: 14px; /* Smaller font for button text */
+    padding: 8px 16px; /* Smaller padding for the button */
+  }
 }

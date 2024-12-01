@@ -767,3 +767,53 @@ body {
     font-size: 16px;
   }
 }
+
+.cta-section {
+  background-color: #f9f9f9; /* Light background */
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.cta-container h2 {
+  font-size: 2.5rem; /* Adjust heading size */
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color */
+}
+
+.cta-container h2 span {
+  text-decoration: underline;
+  text-decoration-color: #ffa500; /* Highlighted underline */
+}
+
+.cta-container p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666; /* Subtle text color */
+}
+
+.cta-container a {
+  text-decoration: none;
+  color: #ffa500;
+  font-weight: 600;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ffa500;
+  color: #ffffff; /* Button text is now white */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ff8500; /* Slightly darker on hover */
+  color: #ffffff; /* Ensure text remains white on hover */
+}
