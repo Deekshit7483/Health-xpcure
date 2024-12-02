@@ -762,8 +762,7 @@ p {
 
 
   /* Footer Styling */
-.footer {
-  background-color: white;
+.footer { 
   padding: 40px 60px;
   font-family: 'Arial', sans-serif;
   color: white;
@@ -774,10 +773,12 @@ p {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap; /* Ensures mobile responsiveness */
+  color: white;
 }
 
 .footer-logo-desc {
   max-width: 35%;
+  color: white;
 }
 
 .footer-logo {
@@ -800,6 +801,7 @@ p {
   font-size: 14px;
   margin-top: 10px;
   line-height: 1.6;
+  color: white;
 }
 
 .footer-contact, .footer-socials {
@@ -809,6 +811,7 @@ p {
 .footer-contact h3, .footer-socials h3 {
   font-size: 18px;
   margin-bottom: 10px;
+  color: white;
 }
 
 .footer-contact p, .footer-socials p {
@@ -816,6 +819,7 @@ p {
   margin: 5px 0;
   display: flex;
   align-items: center;
+  color: white;
 }
 
 .footer-contact a, .footer-socials a {

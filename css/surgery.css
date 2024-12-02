@@ -578,10 +578,10 @@ body {
 
 /* Footer Styling */
 .footer {
-  background-color: white;
+  background-color: #061C23;
   padding: 40px 60px;
   font-family: 'Arial', sans-serif;
-  color: #333;
+  color: white;
 }
 
 .footer-container {

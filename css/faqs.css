@@ -811,7 +811,7 @@ body {
   text-decoration: none;
   transition: background-color 0.3s;
   background-color: #ff8500; /* Slightly darker on hover */
-  color: #f8f3f3; /* Ensure text remains white on hover */
+  color: white; /* Ensure text remains white on hover */
 }
 
 .cta-button:hover {
