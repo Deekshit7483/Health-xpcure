@@ -1593,6 +1593,7 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  translate: 20px 2px;
 }
 
 /* Responsive styles for smaller screens */
