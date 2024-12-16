@@ -362,7 +362,7 @@ display: none;
     font-weight: bold;
     color: black; /* Text color */
     padding: 0.5rem 1rem;
-    background-image: url('https://img.freepik.com/free-vector/decorative-soft-green-watercolor-brush-stroke-design-background_1055-20735.jpg?t=st=1733062247~exp=1733065847~hmac=b7fd739cbc5eaba13f6656c3b283ff524924164a245ac87fd54f0235970662c7&w=1060'); /* Replace with your image URL */
+    /*background-image: url('https://img.freepik.com/free-vector/decorative-soft-green-watercolor-brush-stroke-design-background_1055-20735.jpg?t=st=1733062247~exp=1733065847~hmac=b7fd739cbc5eaba13f6656c3b283ff524924164a245ac87fd54f0235970662c7&w=1060'); /* Replace with your image URL */
     background-size: 200px; /* Adjust size to fit */
     background-position: center;
     background-repeat: no-repeat;
