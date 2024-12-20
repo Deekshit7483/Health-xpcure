@@ -1947,3 +1947,9 @@ button {
   font-size: 18px; /* Adjust size of stars */
   color: #ffb400; /* Gold color for stars */
 }
+
+.footer-socials img{
+  width: 18px;
+  height: 18px;
+  align-items: center;
+}

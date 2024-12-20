@@ -674,3 +674,9 @@ body {
     font-size: 16px;
   }
 }
+
+.footer-socials img{
+  width: 18px;
+  height: 18px;
+  align-items: center;
+}

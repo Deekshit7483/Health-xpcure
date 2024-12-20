@@ -818,3 +818,9 @@ body {
   background-color: #ff8500; /* Slightly darker on hover */
   color: #ffffff; /* Ensure text remains white on hover */
 }
+
+.footer-socials img{
+  width: 18px;
+  height: 18px;
+  align-items: center;
+}
